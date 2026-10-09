@@ -16,7 +16,7 @@ class LocalDb {
 
   static bool _hiveReady = false;
 
-  static Future<LocalDb> open(String namespace, SecureStore secure) async {
+  static Future<LocalDb> open(String namespace, SecretStore secure) async {
     if (!_hiveReady) {
       await Hive.initFlutter();
       _hiveReady = true;

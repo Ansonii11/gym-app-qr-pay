@@ -8,7 +8,7 @@ import 'b64.dart';
 class KeyManager {
   KeyManager(this._secure);
 
-  final SecureStore _secure;
+  final SecretStore _secure;
   final Ed25519 _algo = Ed25519();
   SimpleKeyPair? _keyPair;
   String? _publicKeyB64;

@@ -19,7 +19,7 @@ class ClientController extends ChangeNotifier {
 
   final ClientRepository _repo;
   final KeyManager _keys;
-  final SecureStore _secure;
+  final SecretStore _secure;
   final Clock _clock;
   final ReminderPlanner _planner = const ReminderPlanner();
 
